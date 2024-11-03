@@ -125,7 +125,7 @@ int Parser::expr() {
         if (m_currentToken.m_type == Token::PLUS) {
             eat(Token::PLUS);
             result += term();
-        } else if (m_currentToken.m_type == Token::DIV) {
+        } else if (m_currentToken.m_type == Token::MINUS) {
             eat(Token::MINUS);
             result += term();
         } else {
